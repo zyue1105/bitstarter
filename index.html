@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloundfront.net/startup%Fcode%2Fcode%2bootstrap-combines.no-icons.min.css">
     <link type="text/css" rel="stylesheet"
           href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,600italic,700italic,300,400,600,700,800">
     <style type="text/css">
       
       /* Large desktop */
@@ -38,9 +39,17 @@
       /* All form factors*/
 
       /* Main body and headings */
-      body { 
-        padding-top: 20px;
-        padding-bottom: 40px;
+      body {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
       }
       .container {
         width: 960px;
@@ -96,25 +105,19 @@
     </div>
 
     <div class="container">
-      <div class="row navigation">
-        <div class="span2 logo">
-          Logo
-        </div>
-        <div class="span6 blank">
-          Blank
-        </div>
-        <div class="span4 about">
-          About
+      <!-- Font and paried font of .heading/.subheading and body from Google fonts -->
+      <!-- www.google.com/fonts/specimen/Ubuntu -->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+      <div class="row-fluid heading">
+        <div class="span12">
+          <h1>Product</h1>
         </div>
       </div>
-      <div class="row heading">
+      <div class="row-fluid subheading">
         <div class="span12">
-          <h1>Bitstarter Title</h1>
-        </div>
-      </div>
-      <div class="row subheading">
-        <div class="span12">
-          <p class="lead">This is my first bitstarter project.</p>
+          <!-- Spcial typography from Bootstrap for lead paragraph. -->
+          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+          <p class="lead">One sentence description.</p>
         </div>
       </div>
       <div class="row pitch">
